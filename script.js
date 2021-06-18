@@ -29,7 +29,7 @@ next.addEventListener("click",goNext);
 prev.addEventListener("click",goPrev);
 document.addEventListener("keydown",addEventKey);
 
-document.addEventListener("mousemove",addEventMouse);
+//document.addEventListener("mousemove",addEventMouse);
 lightBoxContainer2.addEventListener("mouseup",addEventMouseClick);
 
 function goNext(){
