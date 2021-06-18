@@ -1,0 +1,113 @@
+body,*,*::after,*::before{
+    
+    box-sizing: border-box;
+    /* cursor: none; */
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* overflow: hidden; */
+
+}
+.container{
+   width: 85%;
+   margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+    flex-flow: wrap row ;
+    justify-self: start;
+
+}
+.item{
+  width: 30.33%;
+  height: 294px;  
+
+}
+.item img{
+ /* cursor: pointer; */
+    width: 100%;
+    height: 224px;
+}
+.light-box-container{
+    /* display: none; */
+    position: fixed;
+    background:rgba(0, 255, 255, 0.226);
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    transform: scale(0);
+    align-items: center; 
+    /* transform: scale(0.1); */
+    transition: all 0.5s ease;
+
+}
+.light-box-item{
+    width:300px;
+   
+    height: 216px;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center; 
+    background-position: cente;
+    position: relative;
+    background-size: contain;
+}
+.item img{
+    width: 100%;
+    height: 200px;
+}
+.div1{
+transition: 0.5 all ease;
+}
+
+#stop{
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    /* color: beige;background-color: rgb(236, 236, 247); */
+    color: #c6c14b}
+#prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: beige;
+}
+#next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: beige;
+}
+#imgBody{
+position: absolute;
+width: 20px;
+height: 40px;
+
+}
+
+@media( max-width:991px){
+    .item{
+        width: 40%;
+    }
+    body{
+        overflow-x: hidden;
+        overflow-y: unset;
+    }
+}
+@media( max-width:767px){
+    .item{
+        width: 100%;
+    }
+    body{
+        overflow-x: hidden;
+        overflow-y: unset;
+    }
+}
